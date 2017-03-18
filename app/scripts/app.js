@@ -2,14 +2,14 @@
 
 /**
  * @ngdoc overview
- * @name boilerplateApp
+ * @name marvelApp
  * @description
- * # boilerplateApp
+ * # marvelApp
  *
  * Main module of the application.
  */
 angular
-  .module('boilerplateApp', [
+  .module('marvelApp', [
     'ngAnimate',
     'ngCookies',
     'ngResource',
