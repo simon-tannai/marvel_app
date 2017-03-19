@@ -42,6 +42,8 @@ angular.module('marvelApp')
 
       $scope.characterDetails.nbComics = $scope.characters[indexOfList].comics.available;
       $scope.characterDetails.threeFirstComics = $scope.characters[indexOfList].comics.items.slice(0, 3);
+
+      $scope.characterDetails.img = $scope.characters[indexOfList].thumbnail.path + '.' + $scope.characters[indexOfList].thumbnail.extension;
     };
 
     // Get characters from API
@@ -53,5 +55,5 @@ angular.module('marvelApp')
       function (error) {
         Materialize.toast(error.message, 4000);
       }
-    )
+    );
   });
