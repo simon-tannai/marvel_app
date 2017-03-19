@@ -31,6 +31,4 @@ angular
   .run(function ($rootScope, $location) {
     $rootScope.url = $location.protocol() + '://' + $location.host();
     $rootScope.api = $rootScope.url + ':8080';
-
-    jQuery('.modal').modal();
   });
